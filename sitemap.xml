@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+		<loc>
+			https://rtchutm.web.app/
+		</loc>
+		<xhtml:link rel="alternate" hreflang="zh" href="https://rtchutm.web.app/localized-files/zh" />
+		<xhtml:link rel="alternate" hreflang="zh-cn" href="https://rtchutm.web.app/localized-files/zh_cn" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://rtchutm.web.app/localized-files/en" />
+	</url>
+	<url>
+		<loc>
+			https://rtchutm.web.app/localized-files/zh
+		</loc>
+		<xhtml:link rel="alternate" hreflang="zh" href="https://rtchutm.web.app/localized-files/zh" />
+		<xhtml:link rel="alternate" hreflang="zh-cn" href="https://rtchutm.web.app/localized-files/zh_cn" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://rtchutm.web.app/localized-files/en" />
+	</url>
+	<url>
+		<loc>
+			https://rtchutm.web.app/localized-files/zh_cn
+		</loc>
+		<xhtml:link rel="alternate" hreflang="zh" href="https://rtchutm.web.app/localized-files/zh" />
+		<xhtml:link rel="alternate" hreflang="zh-cn" href="https://rtchutm.web.app/localized-files/zh_cn" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://rtchutm.web.app/localized-files/en" />
+	</url>
+	<url>
+		<loc>
+			https://rtchutm.web.app/localized-files/en
+		</loc>
+		<xhtml:link rel="alternate" hreflang="zh" href="https://rtchutm.web.app/localized-files/zh" />
+		<xhtml:link rel="alternate" hreflang="zh-cn" href="https://rtchutm.web.app/localized-files/zh_cn" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://rtchutm.web.app/localized-files/en" />
+	</url>
+</urlset>

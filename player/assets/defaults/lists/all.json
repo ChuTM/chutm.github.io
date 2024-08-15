@@ -1,0 +1,102 @@
+{
+    "songs": [
+        {
+            "song": "Short Nocturne",
+            "album": "New World",
+            "artist": "ReTrn",
+            "year": 2024,
+            "source": "Short Nocturne.mp3"
+        },
+        {
+            "song": "Yours Sincerely",
+            "album": "New World",
+            "artist": "ReTrn",
+            "year": 2024,
+            "source": "Yours Sincerely.mp3"
+        },
+        {
+            "song": "Mountain's Censer",
+            "album": "New World",
+            "artist": "ReTrn",
+            "year": 2024,
+            "source": "Mountain's Censer.mp3"
+        },
+        {
+            "song": "Darkness",
+            "album": "New World",
+            "artist": "ReTrn",
+            "year": 2024,
+            "source": "Darkness.mp3"
+        },
+        {
+            "song": "Bright",
+            "album": "New World",
+            "artist": "ReTrn",
+            "year": 2024,
+            "source": "Bright.mp3"
+        },
+        {
+            "song": "Passed Ways to the Future",
+            "album": "New World",
+            "artist": "ReTrn",
+            "year": 2024,
+            "source": "Passed Ways to the Future.mp3"
+        },
+        {
+            "song": "Repic",
+            "album": "With Them",
+            "artist": "ReTrn",
+            "year": 2023,
+            "source": "Repic.mp3"
+        },
+        {
+            "song": "My Own World",
+            "album": "With Them",
+            "artist": "ReTrn",
+            "year": 2023,
+            "source": "My Own World.mp3"
+        },
+        {
+            "song": "The Song for Eve",
+            "album": "With Them",
+            "artist": "ReTrn",
+            "year": 2023,
+            "source": "The Song for Eve.mp3"
+        },
+        {
+            "song": "You",
+            "album": "With Them",
+            "artist": "ReTrn",
+            "year": 2023,
+            "source": "You.mp3"
+        },
+        {
+            "song": "New World",
+            "album": "ReTrn Piano Set - New World",
+            "artist": "ReTrn",
+            "year": 2022,
+            "source": "New World.mp3"
+        },
+        {
+            "song": "Deep",
+            "album": "The Love Story",
+            "artist": "ReTrn",
+            "year": 2022,
+            "source": "Deep.mp3"
+        },
+        {
+            "song": "Ruin",
+            "album": "The Love Story",
+            "artist": "ReTrn",
+            "year": 2022,
+            "source": "Ruin.mp3"
+        },
+        {
+            "song": "The Love Story",
+            "album": "The Love Story",
+            "artist": "ReTrn",
+            "year": 2022,
+            "source": "The Love Story.mp3"
+        }
+    ]
+}

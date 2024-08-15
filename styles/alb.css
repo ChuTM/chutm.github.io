@@ -1,0 +1,331 @@
+:root {
+    /* Colors */
+    --editor-bg-light: #e7e7e7;
+    --editor-bg-dark: #1e1e1e;
+    --editor-bg: var(--editor-bg-light);
+    --editor-nav-light: #ffffff50;
+    --editor-nav-dark: #3f3f3f50;
+    --editor-nav: var(--editor-nav-light);
+    --editor-text-light: #000;
+    --editor-text-dark: #fff;
+    --editor-text: var(--editor-text-light);
+    --editor-bg-focus-light: #ffffff6b;
+    --editor-bg-focus-dark: #4242426b;
+    --editor-bg-focus: var(--editor-bg-focus-light);
+    --color-text-gray-light: #818181;
+    --color-text-gray-dark: #b0b0b0;
+    --border-color-focus-light: #bcbcbc4b;
+    --border-color-focus-dark: #ffffff2e;
+    --border-color-focus: var(--border-color-focus-light);
+    --editor-shawdow-light: #0000002a;
+    --editor-shawdow-dark: #ffffff3a;
+    --editor-shawdow: var(--editor-shawdow-light);
+    --editor-bg-hightlight-light: #0000001f;
+    --editor-bg-hightlight-dark: #ffffff1f;
+    --editor-bg-hightlight: var(--editor-bg-hightlight-light);
+    --editor-bg-hightlight-hover-light: #0000002f;
+    --editor-bg-hightlight-hover-dark: #ffffff2f;
+
+
+    /* Urls */
+    --logo-light: url(../images/logos/heligma_on_light_text.svg);
+    --logo-dark: url(../images/logos/heligma_on_dark_text.svg);
+    --logo: var(--logo-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Colors */
+        --editor-bg: var(--editor-bg-dark);
+        --editor-nav: var(--editor-nav-dark);
+        --editor-text: var(--editor-text-dark);
+        --editor-bg-focus: var(--editor-bg-focus-dark);
+        --color-text-gray: var(--color-text-gray-dark);
+        --border-color-focus: var(--border-color-focus-dark);
+        --editor-shawdow: var(--editor-shawdow-dark);
+        --editor-bg-hightlight: var(--editor-bg-hightlight-dark);
+        --editor-bg-hightlight-hover: var(--editor-bg-hightlight-hover-dark);
+
+        /* Urls */
+        --logo: var(--logo-dark);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* Colors */
+        --editor-bg: var(--editor-bg-light);
+        --editor-nav: var(--editor-nav-light);
+        --editor-text: var(--editor-text-light);
+        --editor-bg-focus: var(--editor-bg-focus-light);
+        --color-text-gray: var(--color-text-gray-light);
+        --border-color-focus: var(--border-color-focus-light);
+        --editor-shawdow: var(--editor-shawdow-light);
+        --editor-bg-hightlight: var(--editor-bg-hightlight-light);
+        --editor-bg-hightlight-hover: var(--editor-bg-hightlight-hover-light);
+
+        /* Urls */
+        --logo: var(--logo-light);
+    }
+}
+
+/* ^ Copied from Heligma 19 Apr 24 */
+
+.touch {
+    user-select: none !important;
+}
+
+.login-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(70vw + 4rem);
+    max-width: 700px;
+    min-height: calc(50% + 4rem);
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    backdrop-filter: blur(7px) brightness(.97);
+    -webkit-backdrop-filter: blur(3px) brightness(.97);
+    overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+    .login-card {
+        backdrop-filter: blur(7px) brightness(1.1);
+        -webkit-backdrop-filter: blur(3px) brightness(1.1);
+    }
+}
+
+.card-content {
+    position: absolute;
+    width: calc(70vw + 4rem);
+    max-width: 700px;
+    height: calc(50vh + 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 1s;
+    transform: translateX(100%);
+
+    &.active {
+        transform: translateX(0);
+    }
+
+    &.inactive {
+        transform: translateX(-100%);
+    }
+}
+
+h1.behind {
+    margin: 0;
+    padding: 2rem;
+    z-index: -1;
+    font-size: min(15vh, 15vw);
+    color: var(--user-preferred-text);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    max-width: 100vh;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    opacity: 0.2;
+}
+
+.animated-arrow {
+    margin-top: 1rem;
+    font-size: .9rem;
+    padding: .8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: var(--user-preferred-text);
+    color: var(--user-preferred-background);
+    text-decoration: none;
+    transition: .3s;
+    user-select: none;
+    -webkit-user-drag: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    img[alt="ARROW"] {
+        --size: 15px;
+        width: var(--size);
+        height: var(--size);
+        transform: translateY(10%);
+        transition: transform 0.3s;
+    }
+
+    &:hover {
+
+        filter: brightness(.98);
+
+        img[alt="ARROW"] {
+            transform: translateY(10%) translateX(20%);
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    img[alt="ARROW"] {
+        filter: invert(1);
+        -webkit-filter: invert(1);
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.btm {
+    position: absolute;
+    z-index: 9 !important;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    color: var(--user-preferred-text);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#copyright>p.color-gray {
+    font-size: .9rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    outline: none;
+    background: var(--user-preferred-background);
+    padding: 7px 17px;
+    border-radius: 7px;
+    font-size: 1rem;
+    width: calc(.5 * 70vw);
+    max-width: 200px;
+    color: var(--user-preferred-text);
+}
+
+.button.small {
+    padding: 5px 10px;
+    font-size: .9rem;
+}
+
+.loader.loading {
+    position: absolute;
+    --loading-image: url('https://alphabrate.github.io/icons/onlight.load_ellipse.svg');
+    background-image: var(--loading-image);
+    transform: rotate(0deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    --size: 1.5rem;
+    top: 45%;
+    left: calc(50% - var(--size) / 2);
+    width: var(--size);
+    height: var(--size);
+    animation: spin 1s infinite steps(12, end);
+
+    transition: 2s;
+}
+
+@media (prefers-color-scheme: dark) {
+    .loader.loading {
+        --loading-image: url('https://alphabrate.github.io/icons/ondark.load_ellipse.svg');
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform-origin: center;
+    }
+}
+
+.alert {
+    user-select: none;
+    position: fixed;
+    bottom: 5em;
+    left: 50%;
+    transform: translateX(-50%) translateZ(0);
+    padding: .5rem 2rem;
+    border-radius: 7px;
+    background-color: var(--editor-bg-focus);
+    color: var(--editor-text);
+    font-size: .9rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    backdrop-filter: blur(7px) saturate(180%);
+    -webkit-backdrop-filter: blur(7px) saturate(180%);
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: .3s;
+    width: max-content;
+    pointer-events: none;
+    border: 1px solid var(--editor-border);
+
+    &.show {
+        opacity: 1;
+    }
+
+    --color: var(--editor-text);
+
+    .color-red * {
+        --color: #ff0000;
+    }
+
+    .color-red>svg {
+        padding: 0px;
+        height: calc(1.3em + 5px);
+        width: calc(1.3em + 5px);
+    }
+
+    .bg-green>svg {
+        background-color: #00ff0081;
+        --color: black;
+    }
+
+
+    .stroke * {
+        stroke: var(--color);
+    }
+
+    .fill * {
+        fill: var(--color);
+    }
+
+    svg {
+        transform: translateY(2px);
+        margin-right: 5px;
+        min-height: 1.3em;
+        min-width: 1.3em;
+        padding: 3px;
+        border-radius: 50%;
+    }
+}
+
+.card-content .stroke * {
+    stroke: var(--user-preferred-text) !important;
+}
+
+.success-circle {
+    display: flex;
+    padding: 2px;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background-color: #00ff0081;
+    justify-content: center;
+    align-items: center;
+}

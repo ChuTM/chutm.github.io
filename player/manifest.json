@@ -1,0 +1,21 @@
+{
+    "short_name": "Music Player",
+    "name": "AlphaBrate Music Player",
+    "author": "AlphaBrate",
+    "id": "alb-msplayer",
+    "url": "https://alb-music.web.app",
+    "icons": [
+    ],
+    "start_url": "/player?list=all",
+    "background_color": "#000000",
+    "display_override": [
+        "fullscreen",
+        "minimal-ui",
+        "window-controls-overlay"
+    ],
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#000000",
+    "description": "AlphaBrate, MUSIC.",
+    "screenshots": []
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-title" content="Music Player">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Music Player</title>
+    <link rel="manifest" href="manifest.json">
+    <!-- theme color -->
+    <link rel="stylesheet" href="player.css">
+</head>
+
+<body style="background-image: url(assets/icons/base/placeholder.svg);">
+    <div id="contextMenu">
+        <div class="item" onclick="app.share()">
+            <img src="assets/icons/contextMenu/share.svg" alt="" class="icon">
+            Share
+        </div>
+        <div class="item" onclick="app.details()">
+            <img src="assets/icons/contextMenu/cloud.svg" alt="" class="icon">
+            Show Details
+        </div>
+        <div class="item" onclick="app.queue()">
+            <img src="assets/icons/contextMenu/list.svg" alt="" class="icon">
+            Show Queue
+        </div>
+        <div class="item" onclick="app.settings()">
+            <img src="assets/icons/contextMenu/settings.svg" alt="" class="icon">
+            Player Settings
+        </div>
+        <div class="line"></div>
+        <div class="item" onclick="immerse(this)" id="lyrics_trig">
+            <img src="assets/icons/contextMenu/immersive_stroke.svg" alt="" class="icon">
+            Lyrics
+        </div>
+    </div>
+    <div class="alert">
+        <div class="alert-icon"></div>
+        <div class="alert-text"></div>
+    </div>
+    <div id="large-alert"></div>
+    <div class="back"></div>
+    <div class="theme-color-transit"></div>
+    <span id="time">--:--</span>
+    <audio src="" id="audio"></audio>
+    <div id="waveform"></div>
+    <div class="player">
+        <img src="assets/icons/base/placeholder.svg" alt="" id="albumArt">
+        <div class="lyrics"></div>
+        <div class="s">
+            <div class="up">
+                <div id="title" onclick="app.queue()">--</div>
+                <div class="current-lyric" onclick="document.getElementById('lyrics_trig').click();"></div>
+                <div id="artist">--</div>
+                <div id="album">--</div>
+                <div id="year">----</div>
+            </div>
+            <div class="down">
+                <div class="mainbuttons">
+                    <button id="prev" class="mbtn">
+                        <img src="assets/icons/controls/previous.svg">
+                    </button>
+                    <button id="toggle" class="mbtn" data-playing="false">
+                        <img id="toggleIcon" src="assets/icons/controls/play.svg">
+                    </button>
+                    <button id="next" class="mbtn">
+                        <img src="assets/icons/controls/next.svg">
+                    </button>
+                </div>
+                <input type="range" name="timecursor" id="tc" value="0" min="0" max="100">
+                <font style="color: gray; opacity: 0;" id="duration">--:--/--:--</font>
+            </div>
+        </div>
+    </div>
+    <script src="js/mouse.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/lrc.js"></script>
+</body>
+
+</html>
