@@ -4,32 +4,20 @@
 		<loc>
 			https://rtchutm.web.app/
 		</loc>
-		<xhtml:link rel="alternate" hreflang="zh" href="https://rtchutm.web.app/zh" />
-		<xhtml:link rel="alternate" hreflang="zh-cn" href="https://rtchutm.web.app/zh_cn" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://rtchutm.web.app/en" />
 	</url>
 	<url>
 		<loc>
 			https://rtchutm.web.app/zh
 		</loc>
-		<xhtml:link rel="alternate" hreflang="zh" href="https://rtchutm.web.app/zh" />
-		<xhtml:link rel="alternate" hreflang="zh-cn" href="https://rtchutm.web.app/zh_cn" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://rtchutm.web.app/en" />
 	</url>
 	<url>
 		<loc>
 			https://rtchutm.web.app/zh_cn
 		</loc>
-		<xhtml:link rel="alternate" hreflang="zh" href="https://rtchutm.web.app/zh" />
-		<xhtml:link rel="alternate" hreflang="zh-cn" href="https://rtchutm.web.app/zh_cn" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://rtchutm.web.app/en" />
 	</url>
 	<url>
 		<loc>
 			https://rtchutm.web.app/en
 		</loc>
-		<xhtml:link rel="alternate" hreflang="zh" href="https://rtchutm.web.app/zh" />
-		<xhtml:link rel="alternate" hreflang="zh-cn" href="https://rtchutm.web.app/zh_cn" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://rtchutm.web.app/en" />
 	</url>
 </urlset>
